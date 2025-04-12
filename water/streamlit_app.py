@@ -21,7 +21,7 @@ def run_water_animation():
 
 # === Get user name from URL ===
 def get_person_name():
-    query_params = st.query_params  # Updated to use `st.query_params`
+    query_params = st.experimental_get_query_params()  # Using experimental method for Streamlit Cloud
     return query_params.get("name", ["Chers professeurs"])[0]
 
 # === Page configuration ===
