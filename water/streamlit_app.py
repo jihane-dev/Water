@@ -21,8 +21,12 @@ def run_water_animation():
 
 # === Get user name from URL ===
 def get_person_name():
-    query_params = st.experimental_get_query_params()  # Using experimental method for Streamlit Cloud
-    return query_params.get("name", ["Chers professeurs"])[0]
+    try:
+        query_params = st.experimental_get_query_params()  # Method available in recent versions
+        return query_params.get("name", ["Chers professeurs"])[0]
+    except AttributeError:
+        # Fallback in case the method is not available
+        return "Chers professeurs"
 
 # === Page configuration ===
 st.set_page_config(page_title="Journée de l’eau", page_icon="💧")
@@ -77,3 +81,4 @@ st.markdown("""
     """,
     unsafe_allow_html=True
 )
+
