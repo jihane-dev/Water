@@ -65,18 +65,12 @@ st.markdown("""
 6. Programme National d’Économie d’Eau, Ministère de l’Équipement et de l’Eau, 2022  
 7. Conseil Economique, Social et Environnemental (C.E.S.E.), (2014) : « Gouvernance par la gestion intégrée des ressources en eau au Maroc : levier fondamental de développement durable » ; Synthèse ; 5 pages. Consultable in : [www.ces.ma](http://www.ces.ma)  
 8. Conseil Economique, Social et Environnemental (Septembre 2019) : « Le droit à l’eau et la sécurité hydrique, gravement menacés par un usage intensif : le C.E.S.E. tire la sonnette d’alarme et appelle à entreprendre des mesures urgentes ». Consultable in : [www.ces.ma](http://www.ces.ma)  
+""")
 
+# Partagé par section
+st.markdown("""
+**Partagé par [Professeur stagiaires SVT - Jihane.J- Mustapha.A- Hicham.A- Saida.R- Jamal.B 💙]**
+""")
 
- 
-    **Partagé par [Professeur stagiaires SVT - Jihane.J- Mustapha.A- Hicham.A- Saida.R- Jamal.B 💙]**
-    
-  
-
-    
-    © all rights reserved
-    """,
-    unsafe_allow_html=True
-)
-
-    unsafe_allow_html=True
-)
+# Footer
+st.markdown("© all rights reserved", unsafe_allow_html=True)
